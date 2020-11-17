@@ -24,4 +24,8 @@
 #( 'Ritu', 'Minz', '102 Abc', 'Ahemdabad','Gujarat', 110022, 9988776655, 'ritu123@gmail.com'),
 #( 'Ativ', 'David', '103 Pqr', 'Mumbai', 'Maharashtra', 400706, 7143298723, 'ativDavid@gmail.com');
  
- select * from address_book;
+ #select * from address_book;
+ 
+ #UC4
+UPDATE address_book SET zip = 834008 WHERE first_name = 'Sippora';
+select * from address_book;
