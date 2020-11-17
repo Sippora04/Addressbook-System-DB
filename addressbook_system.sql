@@ -54,6 +54,11 @@
 #UPDATE address_book SET address_book_type='Teacher' WHERE first_name = 'Darshana';
 
 #UC10
-SELECT address_book_type, count(*) FROM address_book GROUP BY address_book_type;
+#SELECT address_book_type, count(*) FROM address_book GROUP BY address_book_type;
 
+#UC11
+INSERT INTO address_book VALUES
+('Surabhi', 'Thankur', '107 SHS Colony', 'Pen','MH', 443301, 7877452002, 'surabhi21@gmail.com','Addrress Book 2019','Family'),
+('Suyog', 'Gabhane', '108 Anand Nagar', 'Bhopal','MP', 100101, 9171180256, 'gabhane123@gmail.com','Addrress Book 2020','Friend');
 
+SELECT * FROM address_book;
