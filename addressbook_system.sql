@@ -35,5 +35,9 @@
 #select * from address_book;
 
 #UC6
-SELECT * FROM address_book WHERE city = 'Mumbai';
-SELECT * FROM address_book WHERE state = 'Jharkhand';
+#SELECT * FROM address_book WHERE city = 'Mumbai';
+#SELECT * FROM address_book WHERE state = 'Jharkhand';
+
+#UC7
+SELECT city, COUNT(city) FROM address_book GROUP BY city;
+SELECT state, COUNT(state) FROM address_book GROUP BY state; 
