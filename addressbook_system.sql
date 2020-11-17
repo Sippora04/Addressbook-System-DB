@@ -46,11 +46,14 @@
 #SELECT * FROM address_book WHERE city = 'Ranchi' ORDER BY first_name; 
 
 #UC9
-ALTER TABLE address_book ADD address_book_name VARCHAR(50) AFTER email;
-ALTER TABLE address_book ADD address_book_type VARCHAR(50) AFTER address_book_name;
-UPDATE address_book SET address_book_name='Anne Frank' WHERE first_name = 'Sippora';
-UPDATE address_book SET address_book_type='Family' WHERE first_name = 'Sippora';
-UPDATE address_book SET address_book_name='AddressBook 2020' WHERE first_name = 'Ativ';
-UPDATE address_book SET address_book_type='Teacher' WHERE first_name = 'Darshana';
+#ALTER TABLE address_book ADD address_book_name VARCHAR(50) AFTER email;
+#ALTER TABLE address_book ADD address_book_type VARCHAR(50) AFTER address_book_name;
+#UPDATE address_book SET address_book_name='Anne Frank' WHERE first_name = 'Sippora';
+#UPDATE address_book SET address_book_type='Family' WHERE first_name = 'Sippora';
+#UPDATE address_book SET address_book_name='AddressBook 2020' WHERE first_name = 'Ativ';
+#UPDATE address_book SET address_book_type='Teacher' WHERE first_name = 'Darshana';
+
+#UC10
+SELECT address_book_type, count(*) FROM address_book GROUP BY address_book_type;
 
 
