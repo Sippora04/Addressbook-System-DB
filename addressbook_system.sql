@@ -27,5 +27,9 @@
  #select * from address_book;
  
  #UC4
-UPDATE address_book SET zip = 834008 WHERE first_name = 'Sippora';
+#UPDATE address_book SET zip = 834008 WHERE first_name = 'Sippora';
+#select * from address_book;
+
+#UC5
+DELETE FROM address_book WHERE first_name = 'Ritu';
 select * from address_book;
