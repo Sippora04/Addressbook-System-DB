@@ -31,5 +31,9 @@
 #select * from address_book;
 
 #UC5
-DELETE FROM address_book WHERE first_name = 'Ritu';
-select * from address_book;
+#DELETE FROM address_book WHERE first_name = 'Ritu';
+#select * from address_book;
+
+#UC6
+SELECT * FROM address_book WHERE city = 'Mumbai';
+SELECT * FROM address_book WHERE state = 'Jharkhand';
